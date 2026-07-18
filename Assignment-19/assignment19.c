@@ -16,13 +16,10 @@ int main (void)
 		printf("Memory could not be allocated.");
 		return 1;
 	}
-	else 
-	{
 		printf("Memory was successfully allocated.");
 		//this makes sure we don't keep memory allocated that we're not using.
 		free(ptr);
 		//Added this to clear the pointer variable
 		ptr = NULL;
 		return 0;
-	}
 }
