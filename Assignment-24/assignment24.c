@@ -4,9 +4,7 @@
 
 int main (void)
 {
-	int filedescriptor;
-
-	filedescriptor = open("testfile.txt", O_WRONLY | O_CREAT, S_IRWXU);
+	int filedescriptor = open("testfile.txt", O_WRONLY | O_CREAT, S_IRWXU);
 
 	if (filedescriptor < 0)
 	{
